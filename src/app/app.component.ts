@@ -18,6 +18,8 @@ export class AppComponent {
     this.initializeApp();
   }
 
+  // mathContent = `$E = mc^3$`
+
   initializeApp() {
     this.platform.ready().then(() => {
       this.statusBar.styleDefault();
