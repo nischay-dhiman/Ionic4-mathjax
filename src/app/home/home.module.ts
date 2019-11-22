@@ -4,7 +4,7 @@ import { IonicModule } from '@ionic/angular';
 import { FormsModule } from '@angular/forms';
 import { RouterModule } from '@angular/router';
 import { HomePage } from './home.page';
-import { MathjaxComponent } from '../mathjax/mathjax.component';
+import {MathModule} from '../math/math.module';
 
 @NgModule({
   imports: [
@@ -16,8 +16,9 @@ import { MathjaxComponent } from '../mathjax/mathjax.component';
         path: '',
         component: HomePage
       }
-    ])
+    ]),
+    MathModule.forRoot()
   ],
-  declarations: [HomePage, MathjaxComponent]
+  declarations: [HomePage]
 })
 export class HomePageModule {}

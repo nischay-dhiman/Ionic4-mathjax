@@ -6,14 +6,16 @@
   </ion-toolbar>
 </ion-header>
 
+
 <ion-content>
-  <div class="ion-padding">
-    <h1>MathJax Test</h1>
-
-    $E = mc^2$
-
-    <mathjax [content]='mathContent' class="box"></mathjax>
-
-
-  </div>
+    <h1>latex</h1>
+    <div [appMath]="mathLatex"></div>
+    <h1> mathml</h1>
+    <div [appMath]="mathMl"></div>
+    
+    <h1>inner html</h1>
+    <div [appMath]>
+      $E = mc^2$
+    </div>
+    
 </ion-content>
